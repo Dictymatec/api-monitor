@@ -1,0 +1,8 @@
+{
+    "findAll" : "SELECT * FROM job ORDER BY Date DESC",
+    "findByStatus" : "SELECT * FROM job WHERE status =",
+    "find" : "SELECT j.Date,j.Reason,j.Status,j.ModuleID, ji.Value, ji.Tag FROM job j LEFT JOIN JobInfo ji ON j.PK_Job = ji.FK_Job WHERE PK_Job =",
+    "deleteJob" : "DELETE FROM job WHERE PK_Job =",
+    "deleteInfo" : "DELETE FROM jobinfo WHERE FK_Job =",
+    "count" : "SELECT COUNT(PK_Job) AS nb FROM job WHERE status ="
+}
